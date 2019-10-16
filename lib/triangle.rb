@@ -18,7 +18,7 @@ class Triangle
         :isosceles
       elsif (@side_1 != @side_2) && (@side_2 != @side_3) && (@side_1 != @side_3)
         :scalene
-      elsif (@side_1 != @side_2) && (@side_2 != @side_3) && (@side_1 != @side_3)
+      elsif (@side_1 == @side_2) && (@side_2 == @side_3) && (@side_1 == @side_3)
       # raise TriangleError
       end
     end
