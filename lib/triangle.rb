@@ -35,6 +35,7 @@ def kind(a, b, c)
   return :isosceles if a == b or b == c
   return :scalene
 end
+end 
 class TriangleError < StandardError
   def message
     "This is an illegal triangle"
