@@ -30,7 +30,7 @@ class Triangle
 
 def kind(a, b, c)
   a, b, c = [a, b, c].sort
-   if a <= 0 or a + b <= c
+  raise TriangleError if a <= 0 or a + b <= c
    :equilateral if a == c
    :isosceles if a == b or b == c
    :scalene
